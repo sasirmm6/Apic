@@ -1,0 +1,45 @@
+info:
+  title: SasiBank
+  name: sasibank
+  version: 1.0.0
+apis:
+  transactionlist1.0.0:
+    $ref: transactionlist_1.0.0.yaml
+  mapcomponent21.0.0:
+    $ref: mapcomponent2_1.0.0.yaml
+  newsapi1.0.0:
+    $ref: newsapi_1.0.0.yaml
+  srihari1.0.0:
+    $ref: srihari_1.0.0.yaml
+  ibm-sample-order-api1.0.0:
+    $ref: ibm-sample-order-api_1.0.0.yaml
+gateways:
+  - datapower-api-gateway
+plans:
+  sasicustom:
+    title: SasiCustom
+    rate-limits:
+      Default rate-limit:
+        value: 10/1minute
+        hard-limit: true
+    burst-limits:
+      Default burst-limit:
+        value: 2/1minute
+    apis:
+      transactionlist1.0.0: {}
+      mapcomponent21.0.0: {}
+      newsapi1.0.0: {}
+      srihari1.0.0: {}
+      ibm-sample-order-api1.0.0: {}
+product: 1.0.0
+visibility:
+  view:
+    enabled: true
+    type: public
+    tags: []
+    orgs: []
+  subscribe:
+    enabled: true
+    type: authenticated
+    tags: []
+    orgs: []
