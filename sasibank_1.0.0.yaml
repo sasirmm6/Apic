@@ -1,7 +1,7 @@
 info:
   title: SasiBank
   name: sasibank
-  version: 1.0.1
+  version: 1.0.0
 apis:
   transactionlist1.0.0:
     $ref: transactionlist_1.0.0.yaml
